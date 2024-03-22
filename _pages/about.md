@@ -2,24 +2,22 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Master of Science in Artificial Intelligence Engineering (conc. in Robotics) @ Carnegie Mellon University
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: Akshay_prof_pic.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Pittsburgh, PA 15217</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, my name is Akshay Badagabettu. I am first year graduate student pursuing an MS in Artificial Intelligence Engineering (conc. in Robotics). I work with Dr. Amir Barati Farimani in the Mechanical and Artificial Intellligence Lab (MAIL).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am interested in Natural Language Processing, particularly in the field of autonomous agents and iterative refining of outputs produced by LLMs. I am currently working on generating 3D CAD models using only natural language prompts. I am also interested in the areas of code generation and Retrieval-Augmented Generation.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I completed my undergrad at Vellore Institute of Technology, Vellore, India and interned at Sandvik Mining and Rock Technology as a Mechanical and Machine Learning Engineer. If you are interested in my projects or research areas, feel free to reach out to me via my [email](abadagab@andrew.cmu.edu)
