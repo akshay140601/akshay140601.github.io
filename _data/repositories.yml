@@ -1,12 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - akshay140601
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - akshay140601/3D-Model-Generation-using-Natural-Language
+  - akshay140601/GANs-with-S4-architecture
+  - akshay140601/End-to-End-NLP-System
+  - akshay140601/Self-Refine-Reimplementation
+  - akshay140601/mast-design
+  - akshay140601/Llama-from-scratch
+  - akshay140601/Pytorch-from-scratch
+  - akshay140601/CNN-from-scratch
+  - akshay140601/SLAM_project
