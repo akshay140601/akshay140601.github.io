@@ -2,7 +2,7 @@
 layout: page
 title: Automating mast design of blasthole drill rigs
 description:
-img: assets/img/proj_2_1.jpg
+img: assets/img/proj_2_1.png
 importance: 2
 category: work
 ---
