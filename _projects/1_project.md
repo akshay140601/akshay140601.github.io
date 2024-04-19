@@ -2,7 +2,7 @@
 layout: page
 title: RAG-based chatbot for answering questions related to CMU
 description:
-img: assets/img/proj_2_1.png
+img: assets/img/proj_1_1.png
 importance: 1
 category: work
 related_publications: true
