@@ -1,11 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Automating mast design of blasthole drill rigs
+description:
+img: assets/img/proj_2_1.jpg
 importance: 2
 category: work
-giscus_comments: true
 ---
 
 The design and analysis of a mast of a blasthole drill rig takes a collective effort of 15 engineers, about 12 months to complete. This is an extremely expensive process and additionally, there is no fixed method to design the mast. In this project, I developed ‘Mast Analyzer’ , an end-to-end Machine Learning model that predicts whether the designed mast of a blasthole drill rig fails in any critical load cases. The design engineers enter the mast parameters and load characteristics as the input to their website, and if the mast is failing for any load case, the engineer can re-enter the parameters to fix the error.
