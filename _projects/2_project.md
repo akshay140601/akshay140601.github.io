@@ -8,74 +8,19 @@ category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The design and analysis of a mast of a blasthole drill rig takes a collective effort of 15 engineers, about 12 months to complete. This is an extremely expensive process and additionally, there is no fixed method to design the mast. In this project, I developed ‘Mast Analyzer’ , an end-to-end Machine Learning model that predicts whether the designed mast of a blasthole drill rig fails in any critical load cases. The design engineers enter the mast parameters and load characteristics as the input to their website, and if the mast is failing for any load case, the engineer can re-enter the parameters to fix the error.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+There was no data available to begin with, so I performed FEA for 6 mast configurations for multiple critical load cases and collected the stress data along multiple critical locations. The dataset had all the relevant mast parameters such as width, depth, height, and all the load characteristics such as pulldown force, torque, cylinder force, and also the stress and deflection values that we obtained. A problem was that the number of data points were not enough and hence, I implemented upsampling techniques such as CTGAN and SMOTE to increase the number of data points. Once the dataset was ready, I leveraged a combination of traditional ML algorithms such as XGB and Random Forest to develop the model.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/proj_2_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Landing page of the website.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+A separate model was developed for each load case, and the error of each model was less than 10%. Once all the models were developed, a new mast which was not considered while generating the dataset was taken. I performed FEA of the mast for all the critical load cases, and then used my ‘Mast Analyzer’. The difference in results were less than 2%. The ‘Mast Analyzer’ currently saves 40% in design time.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+In conclusion, I developed an end-to-end ML model to solve a real-world engineering problem, and validated the model with a new mast. The website is currently hosted on the company’s secure Azure server.
