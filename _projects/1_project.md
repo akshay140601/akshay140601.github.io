@@ -18,7 +18,7 @@ We first scraped all the data from different formats of documents such as HTML, 
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Architecture of our best system.
 </div>
 
 We evaluated our system on 3 metrics viz., exact match (if the generated answer matches exactly with the reference answer), F1 score, and recall. Our best system had an F1 score of 0.41, and the closed book usage of our system had an F1 score of only 0.1352. We also made sure that our results are statistically significant. We see a tremendous improvement in performance with using our RAG architecture.
